@@ -1,6 +1,10 @@
 # Blocka-Chopa
 My take on the classic mods Lumberjack/Treecapitator & Veinminer with some new feature additions.
 
+Note: This addon requires experimental settings enabled.
+
+[Download: Mcpack - 0.0.1 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.1.mcpack)
+
 ## Features
 
 - **Chop down entire trees.**
