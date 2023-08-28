@@ -7,11 +7,11 @@ Note: This addon requires experimental settings enabled.
 
 ## Features
 
-- **Chop down entire trees.**
-- **Mine entire ore veins.**
-- **Shear scores of leaves.**
-- **Enchantments considered**
-- **Hastily harvest crops while quickly replanting seeds.**
+- **Chop down entire trees using axes.**
+- **Mine entire ore veins using pickaxes.**
+- **Shear scores of leaves using shears.**
+- **Enchantments considered, leaves drop with silk touch.**
+- **Hastily harvest crops using hoes while quickly replanting seeds.**
 - **Use the applicable tool while sneaking to activate effect.**
 - **Control who has access to the effect with a custom settings menu.**
 - **Designed to be compatible.**
