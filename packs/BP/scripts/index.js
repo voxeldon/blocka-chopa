@@ -31,7 +31,7 @@ mc.system.runTimeout(() => {
         }
         mc.world.setDynamicProperty("initCheck", true);
     } catch (e) {console.warn("Error: " + e);}
-}, 100);
+}, 200);
 
 mc.world.afterEvents.itemUse.subscribe((event) => {
     try{
