@@ -54,7 +54,7 @@ mc.world.afterEvents.itemUse.subscribe((event) => {
     
 })
 
-mc.world.afterEvents.blockBreak.subscribe((event) => {
+mc.world.afterEvents.playerBreakBlock.subscribe((event) => {
     try {
         const { brokenBlockPermutation, player } = event;
         const block = brokenBlockPermutation;

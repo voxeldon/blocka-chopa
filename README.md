@@ -3,7 +3,11 @@ My take on the classic mods Lumberjack/Treecapitator & Veinminer with some new f
 
 Note: This addon requires experimental settings enabled.
 
-[Download: Mcpack - 0.0.1 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.1.mcpack)
+---
+
+[Download: Mcpack - 0.0.2 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.2.mcpack)
+
+[Download: ZIP    - 0.0.2 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.2.zip)
 
 ## Features
 
@@ -64,3 +68,11 @@ The structure of the addon was designed to work with vanilla parity in mind and 
 //Log Block
 "components": { "tag:is_ore": {}} // this tag is optional the script additionally checks for files ending with _ore
 ```
+
+
+
+## Legacy Downloads
+
+[Download: Mcpack - 0.0.1 (Outdated)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.1.mcpack)
+
+[Download: ZIP    - 0.0.1 (Outdated)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.1.zip)
