@@ -4,20 +4,20 @@
     "description": "By Donthedev",
     "name": "Blocka-Chopa",
     "uuid": "7e157e5b-dd36-46b0-8a26-262139731a8f",
-    "version": [0, 0, 2],
+    "version": [0, 0, 3],
     "min_engine_version": [1,20,31]
   },
   "modules": [
     {
       "type": "data",
       "uuid": "0ce49289-86de-48cf-9efa-fd6ffee50353",
-      "version": [0, 0, 2]
+      "version": [0, 0, 3]
     },
     {
         "type": "script",
         "language": "javascript",
         "uuid": "7f92cc55-8773-4b3f-b05c-01c7d5e2adcc",
-        "version": [0, 0, 2],
+        "version": [0, 0, 3],
         "entry": "scripts/index.js"
     }
   ],

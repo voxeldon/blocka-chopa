@@ -1,5 +1,7 @@
 import { world } from '@minecraft/server';
+import { LDB } from './ldb';
 const OVERWORLD = world.getDimension("overworld");
+const DB = new LDB;
 
 /**
 * Retrieves data about the block that was broken.
@@ -45,7 +47,14 @@ export function checkBlockType(blockData) {
     } else if (blockData.tags.includes('roots') || blockData.id.includes('roots')) {
         isValid = true;
         type = 'roots';
-    } else if (blockData.tags.includes('ore') || blockData.id.includes('ore')) {
+    } else if (blockData.tags.includes('stem') || blockData.id.includes('stem')) {
+        isValid = true;
+        type = 'stem';
+    } else if (blockData.tags.includes('wart') || blockData.id.includes('wart')) {
+        isValid = true;
+        type = 'wart';
+    }
+    else if (blockData.tags.includes('ore') || blockData.id.includes('ore')) {
         isValid = true;
         type = 'ore';
     } else if (blockData.tags.includes('leaves') || blockData.id.includes('leaves')) {
@@ -112,8 +121,6 @@ export function checkItemType(itemData) {
     return { isValid, type }
 }
 
-const maxBlockBreak = 100;
-
 /**
 * Finds all neighboring blocks of the same type as the broken block.
 * 
@@ -122,6 +129,8 @@ const maxBlockBreak = 100;
 * @returns {Array} An array of objects, each object representing a neighboring block with its ID, location, and the direction relative to the original block.
 */
 export function getBlockNeighbours(blockData, isValidBlock) {
+    let mem = DB.getArray('blkc_mem', 'memory');
+    const maxBlockBreak = mem.block_cap;
     let neighbours = [];
     let origin = { x: blockData.location.x, y: blockData.location.y, z: blockData.location.z };
     const visitedLocations = new Set();

@@ -1,5 +1,8 @@
 import { world, ItemStack } from '@minecraft/server';
+import { LDB } from './ldb';
 const OVERWORLD = world.getDimension("overworld");
+
+const DB = new LDB;
 
 /**
 * Calculates the number of blocks in the array.
@@ -30,6 +33,8 @@ export function cleanString(str) {
 * @param {number} count - The number of blocks broken.
 */
 export function printActionbar(blockData, count) {
+    const storedMemory = DB.getArray('blkc_mem', 'memory');
+    if (!storedMemory.show_counter) return;
     const id = blockData.id;
     const cleanedId = cleanString(id);
     blockData.source.onScreenDisplay.setActionBar(`§4Broke §6${count} §2${cleanedId}s`);

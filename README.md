@@ -5,9 +5,9 @@ Note: This addon requires experimental settings enabled.
 
 ---
 
-[Download: Mcpack - 0.0.2 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.2.mcpack)
+[Download: Mcpack - 0.0.3 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.3.mcpack)
 
-[Download: ZIP    - 0.0.2 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.2.zip)
+[Download: ZIP    - 0.0.3 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.3.zip)
 
 ## Features
 
@@ -23,6 +23,18 @@ Note: This addon requires experimental settings enabled.
      - This addon should world on custom Trees & Axe tools. ⬇
 
         ```Provided creators are using the proper tagging this addon should be compatible with any other addon.```
+
+
+## Patch Log
+### 0.0.3
+- Added new settings menu (use script event **blkc:settings** to open)
+- Now works on realms.
+
+### 0.0.2
+- Re-wrote base features
+
+### 0.0.1 
+- Inital release.
 
 
 ## For Creators
