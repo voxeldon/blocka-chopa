@@ -128,8 +128,8 @@ export function checkItemType(itemData) {
 * @param {Object} isValidBlock - An object containing information about the validity and type of the block.
 * @returns {Array} An array of objects, each object representing a neighboring block with its ID, location, and the direction relative to the original block.
 */
-export function getBlockNeighbours(blockData, isValidBlock) {
-    let mem = DB.getArray('blkc_mem', 'memory');
+export function getBlockNeighbours(blockData, isValidBlock, mem) {
+    //let mem = DB.getArray('blkc_mem', 'memory');
     const maxBlockBreak = mem.block_cap;
     let neighbours = [];
     let origin = { x: blockData.location.x, y: blockData.location.y, z: blockData.location.z };

@@ -47,16 +47,16 @@ world.afterEvents.playerBreakBlock.subscribe((event) => {
     if (isValidItem.type === 'pickaxe' && !mem.vein_miner) return;
     if (isValidItem.type === 'hoe' && !mem.crop_harvester) return;
     if (Array.isArray(validBlocks) ? validBlocks.includes(isValidBlock.type) : validBlocks === isValidBlock.type) {
-        handleBlockInteraction(blockData, itemData, isValidBlock);
+        handleBlockInteraction(blockData, itemData, isValidBlock, mem);
     }
 });
 
-function handleBlockInteraction(blockData, itemData, blockType) {
+function handleBlockInteraction(blockData, itemData, blockType, mem) {
     try {
-        const neighbours = getBlockNeighbours(blockData, blockType);
+        const neighbours = getBlockNeighbours(blockData, blockType, mem);
         const count = blockCount(neighbours);
         runCommand(blockData, neighbours);
-        printActionbar(blockData, count);
+        printActionbar(blockData, count, mem);
     } catch (e) {
         console.warn(`Error @handleBlockInteraction (${blockType.type}): ${e}`);
     }

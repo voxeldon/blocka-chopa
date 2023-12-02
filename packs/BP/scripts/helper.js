@@ -32,9 +32,8 @@ export function cleanString(str) {
 * @param {Object} blockData - An object containing information about the broken block.
 * @param {number} count - The number of blocks broken.
 */
-export function printActionbar(blockData, count) {
-    const storedMemory = DB.getArray('blkc_mem', 'memory');
-    if (!storedMemory.show_counter) return;
+export function printActionbar(blockData, count, mem) {
+    if (!mem.show_counter) return;
     const id = blockData.id;
     const cleanedId = cleanString(id);
     blockData.source.onScreenDisplay.setActionBar(`§4Broke §6${count} §2${cleanedId}s`);

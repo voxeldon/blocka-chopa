@@ -5,9 +5,9 @@ Note: This addon requires experimental settings enabled.
 
 ---
 
-[Download: Mcpack - 0.0.3 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.3.mcpack)
+[Download: Mcpack - 0.0.4 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.4.mcpack)
 
-[Download: ZIP    - 0.0.3 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.3.zip)
+[Download: ZIP    - 0.0.4 (Experimental)](https://github.com/voxeldon/blocka-chopa/raw/main/releases/blockachopa.0.0.4.zip)
 
 ## Features
 
@@ -26,6 +26,8 @@ Note: This addon requires experimental settings enabled.
 
 
 ## Patch Log
+### 0.0.4
+- Fixed initialization issues.
 ### 0.0.3
 - Added new settings menu (use script event **blkc:settings** to open)
 - Now works on realms.
